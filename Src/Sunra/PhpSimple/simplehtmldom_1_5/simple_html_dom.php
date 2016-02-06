@@ -449,10 +449,9 @@ class simple_html_dom_node
             {
                 $ret .= $this->dom->default_span_text;
             }
-
-
         }
-        return $ret;
+        
+        return trim($ret);
     }
 
     function xmltext()
